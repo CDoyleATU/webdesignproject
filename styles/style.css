@@ -1,0 +1,93 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #333;
+  color: white;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+.features {
+
+}
+
+.hero {
+  background-image: url('https://cdn.creazilla.com/illustrations/1715299/network-information-corporate-illustration-md.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5
+}
+
+footer {
+  padding: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  padding-bottom: 150px;
+  margin: 0px;
+  color: white;
+  background-color:#828282;
+  /* text-align: center; */
+  clear:both;
+  display: block;
+  position: static;
+}
