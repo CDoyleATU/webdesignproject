@@ -51,9 +51,6 @@ nav ul li a:hover {
   background-color: #555;
 }
 
-.features {
-
-}
 
 .hero {
   background-image: url('https://cdn.creazilla.com/illustrations/1715299/network-information-corporate-illustration-md.jpeg');
@@ -74,7 +71,14 @@ nav ul li a:hover {
   background-color: #fff;
   color: #333;
   padding: 10px 20px;
-  border-radius: 5
+  border-radius: 5px;
+}
+
+#active {
+  background-color: #4b4b4b;
+  border-radius: 5px;
+  
+
 }
 
 footer {
