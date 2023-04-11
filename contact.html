@@ -38,17 +38,38 @@
     <h2>Big heading</h2>
     <img src="https://www.telxcomputers.com/wp-content/uploads/2018/06/Why-Online-Comparison-of-Different-IT-companies-in-Miami-is-Crucial.jpg" alt="Lorem" style="float: left;">
     <h3>Heading</h3>
-    <form action="/action_page.php">
+  
+    <form method="post" action="process.php">
+
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname" value="John"><br>
+
         <label for="lname">Last name:</label><br>
         <input type="text" id="lname" name="lname" value="Doe"><br><br>
-        <label for="email">Email:</label><br>
-        <input type="text" id="lname" name="email" value="S000000@atu.ie"><br><br>
-        <label for="comment">Enquiry:</label><br>
-        <input type="text" id="lname" name="Last" value="Comment"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        
+        <label for="service">Select a Service:</label>
+        <select name="service" id="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="cloud">Cloud Computing Solutions</option>
+            <option value="ai">Artificial Intelligence and Machine Learning Solutions</option>
+            <option value="iot">Internet of Things (IoT) Development and Consulting</option>
+            <option value="data">Data Analytics and Visualization Services</option>
+            <option value="cyber">Cybersecurity Solutions and Consulting</option>
+        </select>
+        
+        <label for="location">Location:</label>
+        <input type="text" name="location" id="location" required>
+
+        <label for="comment">Enquiry/Description:</label><br>
+        <input type="text" id="description" name="Last" value="Comment"><br><br>
         <input type="submit" value="Submit">
-      </form> 
+        
+        <button type="submit">Submit</button>
+    </form>
+    
 
 </section> 
 <section style="clear: both;">
