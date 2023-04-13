@@ -56,7 +56,60 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #555;
 }
+/* ================3 Columns=============== */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
+.flex-item {
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .flex-item {
+    flex-basis: 100%;
+  }
+}
+/* .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  
+}
+
+.col {
+  flex: 1;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-radius: 1px #ffffff;
+}
+
+.col-1 {
+  flex-basis: 33.33%;
+  max-width: 100%;
+}
+
+.col-2 {
+  flex-basis: 33.33%;
+  max-width: 50%;
+}
+
+.col-3 {
+  flex-basis: 33.33%;
+  max-width: 33.33%;
+} */
+
+
+.col-1 img, .col-2 img, .col-3 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* ===================================== */
 
 .hero {
   background-image: url('https://cdn.creazilla.com/illustrations/1715299/network-information-corporate-illustration-md.jpeg');
@@ -85,6 +138,13 @@ nav ul li a:hover {
   border-radius: 5px;
   
 
+}
+
+
+th, td {
+  padding: 10px;
+  /* text-align: center; */
+  border: 1px solid black;
 }
 
 .products {
