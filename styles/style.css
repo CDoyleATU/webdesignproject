@@ -56,6 +56,8 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #555;
 }
+
+
 /* ================3 Columns=============== */
 .flex-container {
   display: flex;
@@ -112,7 +114,7 @@ nav ul li a:hover {
 /* ===================================== */
 
 .hero {
-  background-image: url('https://cdn.creazilla.com/illustrations/1715299/network-information-corporate-illustration-md.jpeg');
+  background-image: url('https://cdn.creazilla.com/illustrations/1715299/network-information-corporate-illustration-md.jpeg');   /*Background image for Checklist */
   background-size: cover;
   background-position: center;
   color: #fff;
