@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="IT Solutions Contact page">
-  <meta name="keywords" content="Computers, ITC, Solutions">
+  <meta name="keywords" content="Computers, ITC, Solutions, Contact, Get in touch, Enquiry">
   <meta name="author" content="C Doyle">
   <title>Euphy</title>
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -14,11 +14,26 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    .features {
+      align-items: center;
+      text-align: center;
+      padding-top: 10%;
+      padding-bottom: 10%;
+    }
+  </style>
 </head>
 
 
 <body>
   <header>
+    <picture id="logo">
+      <img src="images/logo_transparent.png" alt="Euphy Logo" height="15%" width="15%">
+    </picture>
+
+    <h1 id="logo_Name">Euphy</h1>
+
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -31,32 +46,28 @@
 
   <section class="hero">
     <h1>Euphy is IT solutions. Done for you</h1>
-    <p>Buzzwordy paragraph about why Euphy is great
-      and why you should choose us to look after your
-      technological needs.
-      Lorem ipsum dolor sit amet. consectetur
-      adipiscing elit.</p>
+    <p>Unleash the power of disruptive technologies and transform your organization into a digital powerhouse with our cutting-edge tech solutions.</p>
+
     <a href="pricing.html" class="button">Get Started</a>
   </section>
 
 
   <section class="features">
-    <h2>Big heading</h2>
-    <img src="https://www.telxcomputers.com/wp-content/uploads/2018/06/Why-Online-Comparison-of-Different-IT-companies-in-Miami-is-Crucial.jpg" alt="Lorem" style="float: left;">
-    <h3>Heading</h3>
+    <h2>Get in contact with us!</h2>
+    <h3>Fill out the following form to get in touch, enquire about pricing.</h3>
   
-    <form method="post" action="process.php">
+    <form method="get" action="http://foo.com">
 
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="fname" class="required">First name:</label>
+        <input type="text" id="fname" name="fname" placeholder="John" required><br><br>
 
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <label for="lname" class="required">Last name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Doe" required><br><br>
         
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required>
+        <label for="email" class="required">Email:</label>
+        <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
         
-        <label for="service">Select a Service:</label>
+        <label for="service" class="required">Select a Service:</label>
         <select name="service" id="service" required>
             <option value="" disabled selected>Select a service</option>
             <option value="cloud">Cloud Computing Solutions</option>
@@ -64,38 +75,34 @@
             <option value="iot">Internet of Things (IoT) Development and Consulting</option>
             <option value="data">Data Analytics and Visualization Services</option>
             <option value="cyber">Cybersecurity Solutions and Consulting</option>
-        </select>
+        </select><br><br>
         
-        <label for="location">Location:</label>
-        <input type="text" name="location" id="location" required>
+        <label for="location">Your Business:</label>
+        <input type="text" name="usersBusiness" id="business" placeholder="If applicable."><br><br>
 
-        <label for="comment">Enquiry/Description:</label><br>
-        <input type="text" id="description" name="Last" value="Comment"><br><br>
+        <label for="location">Location:</label>
+        <input type="text" name="location" id="location"><br><br>
+
+        <label for="description" class="required">Enquiry/Description:</label><br>
+        <input type="text" id="description" name="Last" placeholder="Enter your message here."  style="height: 100px;" required><br><br>
+
         <input type="submit" value="Submit">
-        
-        <button type="submit">Submit</button>
     </form>
     
 
 </section> 
-<section style="clear: both;">
-
-    <article>
-    <h3>Heading </h3>
-    <img src="images/Why-Online-Comparison-of-Different-IT-companies-in-Miami-is-Crucial.jpg" alt="Head Chef" style="float: left;">
-    <h4>Heading</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nunc ipsum, sodales et elit non, gravida mollis est. Pellentesque iaculis et dui a egestas. Aliquam eu libero vitae ligula sollicitudin rhoncus. Curabitur quis ultrices ante. Ut eu sapien at nisi imperdiet sollicitudin nec a massa. Sed eu turpis interdum, volutpat ipsum ut, scelerisque libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.h</p>
-    </article>
 
 
   <footer>
-    <p style="float:right;">&copy; 2023 Modern Website. All rights reserved.</p>
-    <ul style="float:left;">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <p style="float:right;">&copy; 2023 Euphy. All rights reserved.<br><span style="font-size:0.75rem;">This is a University Project and this company is fictional. This website is for educational purposes only.</span></p>
+    <nav>
+      <ul style="float:left;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </footer>
 </body>
 </html>

@@ -19,27 +19,48 @@ a {
   text-decoration: none;
 }
 
-ul {
-  list-style: none;
+
+ol, ul {
+  padding-left: 20px;
 }
+
 
 header {
   background-color: #2d2d2d;
   color: #fff;
   padding: 10px;
   font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
 }
 
 #logo_Name{
   font-family: 'Montserrat', sans-serif;
-  size: 50;
+  font-size: 2rem;
+  display: inline-block;
+  margin-left: 150px;
+}
+
+header nav {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
 nav li {
@@ -58,7 +79,10 @@ nav ul li a:hover {
 }
 
 
-/* ================3 Columns=============== */
+
+
+/* ================ 3 Columns =============== */
+/* used on About page */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -76,35 +100,6 @@ nav ul li a:hover {
     flex-basis: 100%;
   }
 }
-/* .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -10px;
-  
-}
-
-.col {
-  flex: 1;
-  padding: 0 10px;
-  box-sizing: border-box;
-  border-radius: 1px #ffffff;
-}
-
-.col-1 {
-  flex-basis: 33.33%;
-  max-width: 100%;
-}
-
-.col-2 {
-  flex-basis: 33.33%;
-  max-width: 50%;
-}
-
-.col-3 {
-  flex-basis: 33.33%;
-  max-width: 33.33%;
-} */
-
 
 .col-1 img, .col-2 img, .col-3 img {
   display: block;
@@ -112,6 +107,8 @@ nav ul li a:hover {
   height: auto;
 }
 /* ===================================== */
+
+
 
 .hero {
   background-image: url('https://cdn.creazilla.com/illustrations/1715299/network-information-corporate-illustration-md.jpeg');   /*Background image for Checklist */
@@ -125,6 +122,9 @@ nav ul li a:hover {
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 30px;
+}
+.hero p {
+  font-size: 1.2rem;
 }
 
 .button {
@@ -168,12 +168,56 @@ hr.rounded {
   border-radius: 6px;
 }
 
+/* Contact page */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+label.required::before {
+  content: "*";
+  color: red;
+  margin-right: 5px;
+}
+
+
+input, select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+
 footer {
   padding: 10px;
   padding-left: 10%;
   padding-right: 10%;
 
-  padding-bottom: 150px;
+  padding-bottom: 50px;
   margin: 0px;
   color: white;
   background-color:#828282;

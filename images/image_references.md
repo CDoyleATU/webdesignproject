@@ -1,3 +1,9 @@
+Pricing Page:
+https://unsplash.com/photos/oyXis2kALVg
+https://unsplash.com/photos/hpjSkU2UYSU
+https://unsplash.com/photos/EUsVwEOsblE
+https://unsplash.com/photos/ZPeXrWxOjRQ 
+
 https://cdn.creazilla.com/illustrations/1715299/network-information-corporate-illustration-md.jpeg
 
 https://www.telxcomputers.com/wp-content/uploads/2018/06/Why-Online-Comparison-of-Different-IT-companies-in-Miami-is-Crucial.jpg
